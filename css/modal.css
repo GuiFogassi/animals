@@ -1,3 +1,10 @@
+:root {
+  --cor-primaria: #FB5;
+  --cor-secundaria: #E54;
+  --cor-fundo: #fff;
+  --fonte-principal: 'IBM Plex Mono', monospace;
+}
+
 .modal-container {
   height: 100vh;
   width: 100%;
@@ -11,16 +18,22 @@
   align-items: center;
 }
 
+body.modal-aberto {
+  overflow: hidden;
+}
+
 .modal-container.ativo {
   display: flex;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .modal {
-  background: #fff;
-  min-width: 300px;
-  padding: 40px;
-  border: 10px solid #FB5;
-  box-shadow: 0 0 0 10px #fff;
+  background: var(--cor-fundo);
+  min-width: 18.75rem;
+  padding: 2.5rem;
+  border: 0.625rem solid var(--cor-primaria);
+  box-shadow: 0 0 0 0.625rem var(--cor-fundo);
   position: relative;
 }
 
@@ -47,16 +60,16 @@
   top: -30px;
   right: -30px;
   position: absolute;
-  background: #E54;
+  background: var(--cor-secundaria);
   box-shadow: 0 4px 4px 0 rgba(0,0,0,.3);
   font-size: 1.2rem;
   color: #fff;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: var(--fonte-principal);
   cursor: pointer;
 }
 
 .modal label {
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: var(--fonte-principal);
   display: block;
   font-weight: bold;
   margin: 1rem 0 .5rem 0;
@@ -70,13 +83,26 @@
 
 .modal button[type="submit"] {
   display: block;
-  background: #E54;
+  background: var(--cor-secundaria);
   border: none;
   border-radius: 4px;
   padding: .7rem 2rem;
   font-size: 1rem;
   color: #fff;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: var(--fonte-principal);
   margin-top: 1rem;
   font-weight: bold;
+}
+
+dialog::backdrop {
+  background: rgba(0,0,0,0.5);
+}
+
+body:has(dialog[open]) {
+  overflow: hidden;
+  pointer-events: none;
+}
+
+dialog[open] {
+  pointer-events: auto;
 }
