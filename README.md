@@ -1,6 +1,9 @@
-# Animais-fantásticos
+# Animais Fantásticos
 
-Este repositório contém um projeto de estudo sobre JavaScript focado em manipulação de dados e programação orientada a objetos, utilizando o tema "Animais fantásticos".
+![Status do Build](https://img.shields.io/badge/build-passing-brightgreen)
+![Versão](https://img.shields.io/badge/versão-1.0.0-blue)
+
+Este repositório contém um projeto de estudo sobre JavaScript focado em manipulação de dados e programação orientada a objetos.
 
 ## Objetivo
 
@@ -19,17 +22,55 @@ O objetivo deste projeto é praticar e demonstrar conceitos avançados de JavaSc
 - Detalhes de cada animal ao clicar
 - Filtro de animais por características
 - Animações e efeitos visuais
+- Menu mobile responsivo
+- Modal de login
+- Fetch de dados de API externa
 
-## Como executar
-
-1. Clone este repositório
-2. Abra o arquivo `index.html` em seu navegador
-
-## Tecnologias utilizadas
+## Tecnologias Utilizadas
 
 - HTML5
 - CSS3
 - JavaScript (ES6+)
+- Webpack
+- Babel
+- ESLint
+
+## Instalação
+
+1. Clone este repositório
+   ```
+   git clone https://github.com/seu-usuario/animais-fantasticos.git
+   ```
+2. Entre no diretório do projeto
+   ```
+   cd animais-fantasticos
+   ```
+3. Instale as dependências
+   ```
+   npm install
+   ```
+
+## Como Executar
+
+Para executar o projeto em modo de desenvolvimento:
+
+```
+npm run dev
+```
+
+Para criar uma build de produção:
+
+```
+npm run build
+```
+
+## Testes
+
+Para executar os testes:
+
+```
+npm test
+```
 
 ## Contribuição
 
