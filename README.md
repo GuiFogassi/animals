@@ -39,7 +39,7 @@ O objetivo deste projeto é praticar e demonstrar conceitos avançados de JavaSc
 
 1. Clone este repositório
    ```
-   git clone https://github.com/seu-usuario/animais-fantasticos.git
+   git clone https://github.com/GuiFogassi/animals.git
    ```
 2. Entre no diretório do projeto
    ```
