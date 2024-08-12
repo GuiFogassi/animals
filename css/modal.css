@@ -8,7 +8,7 @@
 .modal-container {
   height: 100vh;
   width: 100%;
-  background: rgba(0,0,0,.5);
+  background: rgba(0, 0, 0, .5);
   position: fixed;
   top: 0;
   left: 0;
@@ -42,6 +42,7 @@ body.modal-aberto {
     opacity: 0;
     transform: translate3d(0, -30px, 0);
   }
+
   to {
     opacity: 1;
     transform: translate3d(0, 0, 0);
@@ -61,7 +62,7 @@ body.modal-aberto {
   right: -30px;
   position: absolute;
   background: var(--cor-secundaria);
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,.3);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .3);
   font-size: 1.2rem;
   color: #fff;
   font-family: var(--fonte-principal);
@@ -92,17 +93,4 @@ body.modal-aberto {
   font-family: var(--fonte-principal);
   margin-top: 1rem;
   font-weight: bold;
-}
-
-dialog::backdrop {
-  background: rgba(0,0,0,0.5);
-}
-
-body:has(dialog[open]) {
-  overflow: hidden;
-  pointer-events: none;
-}
-
-dialog[open] {
-  pointer-events: auto;
 }
