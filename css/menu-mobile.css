@@ -5,7 +5,7 @@
 @media (max-width: 700px) {
   .js [data-menu="button"] {
     display: flex;
-    background: #221;
+    background: #222;
     border: none;
     padding: .5rem 1rem;
     border-radius: 4px;

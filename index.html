@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Animais Fantásticos</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:700|Playfair+Display+SC" rel="stylesheet">
   <script>document.documentElement.className += ' js';</script>
   <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
@@ -28,29 +28,29 @@
         </li>
         <li><a href="#faq">Faq</a></li>
         <li><a href="#contato">Contato</a></li>
-        <li><a data-modal="abrir" href="login.html">Login →</a></li>
+        <li><a data-modal="abrir" href="login.html">Login <span class="arrow-black"></span></a></li>
       </ul>
     </nav>
     <section class="grid-section animais" data-anime="scroll" id="animais">
       <h1 class="titulo">Animais Fantásticos</h1>
       <ul class="animais-lista" data-tab="menu">
         <li>
-          <img src="img/img1.jpg">
+          <img src="img/imagem1.jpg">
         </li>
         <li>
-          <img src="img/img2.jpg">
+          <img src="img/imagem2.jpg">
         </li>
         <li>
-          <img src="img/img3.jpg">
+          <img src="img/imagem3.jpg">
         </li>
         <li>
-          <img src="img/img4.jpg">
+          <img src="img/imagem4.jpg">
         </li>
         <li>
-          <img src="img/img5.jpg">
+          <img src="img/imagem5.jpg">
         </li>
         <li>
-          <img src="img/img6.jpg">
+          <img src="img/imagem6.jpg">
         </li>
       </ul>
       <div class="animais-descricao" data-tab="content">
@@ -157,6 +157,27 @@
       </dl>
     </section>
 
+    <section class="grid-section galeria" data-anime="scroll">
+      <ul class="custom-controls">
+        <li><img src="img/slide/foto1-thumb.jpg" alt=""></li>
+        <li><img src="img/slide/foto2-thumb.jpg" alt=""></li>
+        <li><img src="img/slide/foto3-thumb.jpg" alt=""></li>
+        <li><img src="img/slide/foto4-thumb.jpg" alt=""></li>
+        <li><img src="img/slide/foto5-thumb.jpg" alt=""></li>
+        <li><img src="img/slide/foto6-thumb.jpg" alt=""></li>
+      </ul>
+      <div class="slide-wrapper">
+        <ul class="slide">
+          <li><img src="img/slide/foto1.jpg" alt=""></li>
+          <li><img src="img/slide/foto2.jpg" alt=""></li>
+          <li><img src="img/slide/foto3.jpg" alt=""></li>
+          <li><img src="img/slide/foto4.jpg" alt=""></li>
+          <li><img src="img/slide/foto5.jpg" alt=""></li>
+          <li><img src="img/slide/foto6.jpg" alt=""></li>
+        </ul>
+      </div>
+    </section>
+
     <section class="grid-section numeros" data-anime="scroll">
       <h1 class="titulo">Números</h1>
       <div class="numeros-grid">
@@ -166,7 +187,7 @@
     <section class="grid-section contato" data-anime="scroll" id="contato">
       <h1 class="titulo">Contato</h1>
       <div class="mapa" data-tooltip aria-label="Endereço próximo ao estacionamento.">
-        <img src="img/maps.png">
+        <img src="img/mapa.png">
       </div>
       <ul class="dados">
         <li>contato@contato.com</li>
@@ -185,7 +206,7 @@
 
   <section class="modal-container" data-modal="container">
     <div class="modal">
-      <button data-modal="fechar" class="fechar">X</button>
+      <button data-modal="fechar" class="fechar"></button>
       <form action="">
         <label for="email">Email</label>
         <input type="text" for="email" id="email">
