@@ -18,13 +18,13 @@ O objetivo deste projeto é praticar e demonstrar conceitos avançados de JavaSc
 
 ## Funcionalidades
 
-- Exibição de uma lista de animais
-- Detalhes de cada animal ao clicar
-- Filtro de animais por características
-- Animações e efeitos visuais
-- Menu mobile responsivo
+- Menu dropdown responsivo
+- Galeria de imagens com slider
+- Seção FAQ com acordeão
 - Modal de login
-- Fetch de dados de API externa
+- Animações de scroll
+- Fetch de dados de uma API externa
+- Animação de números
 
 ## Tecnologias Utilizadas
 
@@ -62,14 +62,6 @@ Para criar uma build de produção:
 
 ```
 npm run build
-```
-
-## Testes
-
-Para executar os testes:
-
-```
-npm test
 ```
 
 ## Contribuição
